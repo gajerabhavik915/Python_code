@@ -1,8 +1,15 @@
-# print('this is for star number')
-# for a in range(2,6):
-#     for i in range(1,a):
-#         print(i, end='')
-#     print(end='\n')
+print('this is for star number')
+for a in range(2,6):
+    for i in range(1,a):
+        print(i, end='')
+    print(end='\n')
+
+###OutPut###
+# this is for star number
+# 1
+# 12
+# 123
+# 1234
 
 
 # print('this is for star number')
@@ -22,28 +29,28 @@
 #         print('*'*(a))
 
 
-for a in range(0, 5):
-    for b in range(0, 5):
-        if a == 0 or b == (4) or a==b:
-            print('*', end = '')
+# for a in range(0, 5):
+#     for b in range(0, 5):
+#         if a == 0 or b == (4) or a==b:
+#             print('*', end = '')
+#
+#         else:
+#             print(end = ' ')
+#
+#     print()
 
-        else:
-            print(end = ' ')
-
-    print()
-
-a = '*'
-b = int(input('what are the rows you want?'))
-for i in range(1,b):
-    if i>1:
-        print((' ')*(i-1), end = '')
-        print(('*'), end = '')
-        if i < b-2:
-            print((' ')*(b-2-i), end = '')
-        if i < b-1:
-            print('*')
-    else:
-        print(a*(b-1))
+# a = '*'
+# b = int(input('what are the rows you want?'))
+# for i in range(1,b):
+#     if i>1:
+#         print((' ')*(i-1), end = '')
+#         print(('*'), end = '')
+#         if i < b-2:
+#             print((' ')*(b-2-i), end = '')
+#         if i < b-1:
+#             print('*')
+#     else:
+#         print(a*(b-1))
 
 # ------------------------------------------------------
 # for a in range(6, 0, -1):
@@ -255,7 +262,7 @@ for i in range(1,b):
 
 # ---------------------------------------------------------
 #
-print('This is for X-shape')
+# print('This is for X-shape')
 
 # for rows in range(5):
 #     for columns in range(5):
@@ -324,13 +331,13 @@ print('This is for X-shape')
 
 # --------------------------------------------------------------
 
-for rows in range(1,5):
-    for columns in range(1,5):
-        if rows + columns >= 5:
-            print('*', end = '')
-        else:
-            print(end = ' ')
-    for more in range(rows, rows*2):
-        print(more, end = '')
-    print()
+# for rows in range(1,5):
+#     for columns in range(1,5):
+#         if rows + columns >= 5:
+#             print('*', end = '')
+#         else:
+#             print(end = ' ')
+#     for more in range(rows, rows*2):
+#         print(more, end = '')
+#     print()
 
