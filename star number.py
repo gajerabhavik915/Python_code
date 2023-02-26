@@ -10,13 +10,21 @@ for a in range(2,6):
 # 12
 # 123
 # 1234
+#---------------------------------------------------------------
 
+print('this is for star number')
+for a in range(1,6):
+    print((str(a))*a)
+    # print(('*')*a)
 
-# print('this is for star number')
-# for a in range(1,6):
-#     print((str(a))*a)
-#     # print(('*')*a)
+###output###
+# 1
+# 22
+# 333
+# 4444
+# 55555
 
+# ------------------------------------------------------------
 # print('this is for star design')
 
 # for a in range(1,10):
