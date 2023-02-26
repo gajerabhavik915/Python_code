@@ -25,27 +25,45 @@ for a in range(1,6):
 # 55555
 
 # ------------------------------------------------------------
-# print('this is for star design')
+print('this is for star design')
 
-# for a in range(1,10):
-#     if a >= 3 and a < 9:
-#         print('*', end = '')
-#         print(' '*(a-2), end = '')
-#         print('*')
-#
-#     else:
-#         print('*'*(a))
+for a in range(1,10):
+    if a >= 3 and a < 9:
+        print('*', end = '')
+        print(' '*(a-2), end = '')
+        print('*')
 
+    else:
+        print('*'*(a))
 
-# for a in range(0, 5):
-#     for b in range(0, 5):
-#         if a == 0 or b == (4) or a==b:
-#             print('*', end = '')
-#
-#         else:
-#             print(end = ' ')
-#
-#     print()
+###output###
+# this is for star design
+# *
+# **
+# * *
+# *  *
+# *   *
+# *    *
+# *     *
+# *      *
+# *********
+##------------------------------------------------------------------------------------
+for a in range(0, 5):
+    for b in range(0, 5):
+        if a == 0 or b == (4) or a==b:
+            print('*', end = '')
+
+        else:
+            print(end = ' ')
+
+    print()
+
+###output###
+# *****
+#  *  *
+#   * *
+#    **
+#     *
 
 # a = '*'
 # b = int(input('what are the rows you want?'))
