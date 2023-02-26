@@ -65,18 +65,30 @@ for a in range(0, 5):
 #    **
 #     *
 
-# a = '*'
-# b = int(input('what are the rows you want?'))
-# for i in range(1,b):
-#     if i>1:
-#         print((' ')*(i-1), end = '')
-#         print(('*'), end = '')
-#         if i < b-2:
-#             print((' ')*(b-2-i), end = '')
-#         if i < b-1:
-#             print('*')
-#     else:
-#         print(a*(b-1))
+
+## Below code is for universal above star design
+a = '*'
+b = int(input('what are the rows you want?'))
+for i in range(1,b):
+    if i>1:
+        print((' ')*(i-1), end = '')
+        print(('*'), end = '')
+        if i < b-2:
+            print((' ')*(b-2-i), end = '')
+        if i < b-1:
+            print('*')
+    else:
+        print(a*(b-1))
+
+###output###
+# what are the rows you want?7
+# ******
+#  *   *
+#   *  *
+#    * *
+#     **
+#      *
+
 
 # ------------------------------------------------------
 # for a in range(6, 0, -1):
