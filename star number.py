@@ -67,20 +67,20 @@ for a in range(0, 5):
 
 
 ## Below code is for universal above star design
-a = '*'
-b = int(input('what are the rows you want?'))
-for i in range(1,b):
-    if i>1:
-        print((' ')*(i-1), end = '')
-        print(('*'), end = '')
-        if i < b-2:
-            print((' ')*(b-2-i), end = '')
-        if i < b-1:
-            print('*')
-    else:
-        print(a*(b-1))
-
-###output###
+# a = '*'
+# b = int(input('what are the rows you want?'))
+# for i in range(1,b):
+#     if i>1:
+#         print((' ')*(i-1), end = '')
+#         print(('*'), end = '')
+#         if i < b-2:
+#             print((' ')*(b-2-i), end = '')
+#         if i < b-1:
+#             print('*')
+#     else:
+#         print(a*(b-1))
+#
+# ##output###
 # what are the rows you want?7
 # ******
 #  *   *
@@ -91,23 +91,40 @@ for i in range(1,b):
 
 
 # ------------------------------------------------------
-# for a in range(6, 0, -1):
-#     if a < 6 and a > 2:
-#         print("*", end = '')
-#         print((' ')*(a-2), end = '')
-#         print('*')
-#     else:
-#         print('*'*(a))
-#
-# for a in range(6, 0, -1):
-#     if a < 6 and a > 2:
-#         print(' '*(6-a), end = '')
-#         print('*', end = '')
-#         print(' '*(a-2), end = '')
-#         print('*')
-#     else:
-#         print(' ' * (6 - a), end='')
-#         print('*'*(a))
+#method 1
+
+for a in range(6, 0, -1):
+    if a < 6 and a > 2:
+        print("*", end = '')
+        print((' ')*(a-2), end = '')
+        print('*')
+    else:
+        print('*'*(a))
+###OUTPUT###
+# ******
+# *   *
+# *  *
+# * *
+# **
+# *
+
+for a in range(6, 0, -1):
+    if a < 6 and a > 2:
+        print(' '*(6-a), end = '')
+        print('*', end = '')
+        print(' '*(a-2), end = '')
+        print('*')
+    else:
+        print(' ' * (6 - a), end='')
+        print('*'*(a))
+
+###OUTPUT###
+# ******
+#  *   *
+#   *  *
+#    * *
+#     **
+#      *
 
 # ---------------------------------------------------------------
 #
