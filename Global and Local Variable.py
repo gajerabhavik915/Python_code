@@ -27,14 +27,31 @@ print('This programme is for understanding of global and local variable')
 
 #---------------------------------------------------------
 
+# def local():
+#     a = 30
+#     print(a)
+#
+# local()
+# print(a)
+
+###output###
+# 30
+# NameError: name 'a' is not defined
+
+#-------------------------------------------------------------
+
+a = 10
 def local():
-    a = 30
+    global a
+    a = 20
     print(a)
 
 local()
 print(a)
 
 ###output###
-# 30
-# NameError: name 'a' is not defined
+# 20
+# 20
+
+#----------------------------------------------------------------
 
