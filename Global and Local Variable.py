@@ -1,0 +1,1 @@
+print('This programme is for understanding of global and local variable')
