@@ -1,17 +1,17 @@
 print('this is for decorator')
 #
-# def fun1(dec1):
-#     def inner():
-#         print('this will be printed first')
-#         dec1()
-#         print('this will be printed second')
-#     return inner
-#
-# def dec1():
-#     print('This will be printed in middle')
-#
-# dec1 = fun1(dec1)
-# dec1()
+def fun1(dec1):
+    def inner():
+        print('this will be printed first')
+        dec1()
+        print('this will be printed second')
+    return inner
+
+def dec1():
+    print('This will be printed in middle')
+
+dec1 = fun1(dec1)
+dec1()
 
 #------------------------------------------------------------
 #('suppose we have already created fun for division')
