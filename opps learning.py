@@ -2,7 +2,7 @@ class Class1:
     no_of_leave = 8
     pass
 
-Bhavik = Class1()
+Bhavik = Class1() #it's call instance
 Dhaval = Class1()
 Jaydip = Class1()
 
@@ -31,7 +31,7 @@ class Class1:
     no_of_leave = 8
 
     def fun1(self):
-        return f'this is {self.name} and his age is {self.age} and his location is {self.location}'
+        return f'this is {self.name} and his age is {self.age} and his location is {self.location}'   #self string
 
 
 
@@ -65,7 +65,7 @@ print(Dhaval.fun1())
 class Class1:
     no_of_leave = 8
 
-    def __init__(self, his_name, His_age, His_gender, His_location):
+    def __init__(self, his_name, His_age, His_gender, His_location): #--init--constructor
         self.name = his_name
         self.age = His_age
         self.gender = His_gender
