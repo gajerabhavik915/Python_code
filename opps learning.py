@@ -116,13 +116,13 @@ class class1:
     def change_leave(cls, new_no_leave):
         class1.no_of_leave = new_no_leave
 
-    @classmethod
+    @classmethod  #if we want any changes, we can do through classmethod
     def from_str(cls, string):
         bhav = string.split('-')
         print(bhav)
         return cls(bhav[0], bhav[1])
 
-    @staticmethod
+    @staticmethod    #this is just for adding string
     def thisgood(string):
         print('this is a good', string)
         return ''
