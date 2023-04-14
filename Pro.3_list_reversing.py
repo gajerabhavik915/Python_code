@@ -1,4 +1,6 @@
-l = [1, 2, 3, 4, 5, 6]
+import builtins
+
+l = [1, 2, 3, 4, 5, 6, 7]
 
 # #method - 1
 # for i in l[::-1]:
@@ -16,16 +18,16 @@ print(l)
 print(-start+end)
 
 # method- 3
-l1 = [1,2,3,4,5,6]
-import time
-list = []
-start1 = time.perf_counter()
-for a in l1[::-1]:
-    list.append(a)
-    # print(a)
-end1 = time.perf_counter()
-print(list)
-print(end - start)
-
+# l1 = [1,2,3,4,5,6]
+# import time
+# list = []
+# start1 = time.perf_counter()
+# for a in l1[::-1]:
+#     list.append(a)
+#     # print(a)
+# end1 = time.perf_counter()
+# print(list)
+# print(end - start)
+#
 
 
