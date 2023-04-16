@@ -61,9 +61,9 @@
 # #---------------------------------------------------------
 #
 # #__init___
-# #
+# # #
 # class Class1:
-#     no_of_leave = 8
+#     # no_of_leave = 8
 #
 #     def __init__(self, his_name, His_age, His_gender, His_location): #--init--constructor
 #         self.name = his_name
@@ -78,8 +78,8 @@
 # Bhavik = Class1('Bhavik', 22, 'male', 'canada')
 # #Bhavik = Class1()
 # Dhaval = Class1('Dhaval', 25, 'male', 'USA')
-# Jaydip = Class1()
-#
+# # Jaydip = Class1()
+
 # Bhavik.name = 'Bhavik'
 # Bhavik.age = 22
 # Bhavik.gender = 'male'
@@ -166,16 +166,61 @@
 # #abstarction
 #
 
+# from abc import ABC, abstractmethod
+#
+#
+# class Shape(ABC):
+#     @abstractmethod
+#     def area(self):
+#         pass
+#
+#
+# class Rectangle(Shape):
+#     def __init__(self, width, height):
+#         self.width = width
+#         self.height = height
+#
+#     def area(self):
+#         return self.width * self.height
+#
+#     def perimeter(self):
+#         return 2 * (self.width + self.height)
+#
+#
+# class Circle(Shape):
+#     def __init__(self, radius):
+#         self.radius = radius
+#
+#     def area(self):
+#         return 3.14 * self.radius ** 2
+#
+#     def perimeter(self):
+#         return 2 * 3.14 * self.radius
+#
+#
+# # code to calculate the total area of a collection of shapes
+# shapes = [Rectangle(3, 4), Rectangle(5, 6), Circle(2), Circle(4)]
+# # circles = [Circle(2), Circle(4)]
+# total_area = 0
+#
+# # calculate area of all rectangles
+# for shape in shapes:
+#     total_area += shape.area()
+#
+# # # calculate area of all circles
+# # for circle in circles:
+# #     total_area += circle.area()
+#
+# print(total_area)
+
 from abc import ABC, abstractmethod
+#
+# class Shape(ABC):
+#     @abstractmethod
+#     def area(self):
+#         pass
 
-
-class Shape(ABC):
-    @abstractmethod
-    def area(self):
-        pass
-
-
-class Rectangle(Shape):
+class Rectangle:
     def __init__(self, width, height):
         self.width = width
         self.height = height
@@ -183,32 +228,19 @@ class Rectangle(Shape):
     def area(self):
         return self.width * self.height
 
-    def perimeter(self):
-        return 2 * (self.width + self.height)
-
-
-class Circle(Shape):
+class Circle:
     def __init__(self, radius):
         self.radius = radius
 
     def area(self):
         return 3.14 * self.radius ** 2
 
-    def perimeter(self):
-        return 2 * 3.14 * self.radius
-
-
 # code to calculate the total area of a collection of shapes
 shapes = [Rectangle(3, 4), Rectangle(5, 6), Circle(2), Circle(4)]
-# circles = [Circle(2), Circle(4)]
 total_area = 0
 
-# calculate area of all rectangles
+# calculate area of all shapes
 for shape in shapes:
     total_area += shape.area()
-
-# # calculate area of all circles
-# for circle in circles:
-#     total_area += circle.area()
 
 print(total_area)
