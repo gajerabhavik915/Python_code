@@ -51,7 +51,15 @@ print(filter(list1)) # [2,4,6]
 # with filter and lambda
 x = [1, 2, 3, 4, 5, 6, 7]
 
-obj = list(filter(x))
-print(obj)
-# obj = [i for i in x if i%2 ==0]
+# obj = list(filter(lambda x : x%2 ==0, x))
 # print(obj)
+
+# how to use map in lambda
+obj = list(map(lambda x : x*2, x))
+print(obj)
+
+# how to use reduce in lambda
+from functools import reduce
+
+obj = (reduce(lambda a,b: a+b, x))
+print(obj)
