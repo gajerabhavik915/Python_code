@@ -32,6 +32,9 @@ print(obj(4,10,20,25))
 obj = lambda a, fun : a+fun(a)
 obj(3, lambda a: a*a)
 
+# how can we add conditional arg.
+obj = lambda a: True if a%2==0 else False
+print(obj(5782526))
 # Now, Let's understand how to apply filter, map and reduce in lambda function
 
 # Let's first understand, what is need of filter and how to apply it.
@@ -63,3 +66,5 @@ from functools import reduce
 
 obj = (reduce(lambda a,b: a+b, x))
 print(obj)
+
+
