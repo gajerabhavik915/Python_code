@@ -1,5 +1,6 @@
 import time
 
+# mathod --1 :- Most optimized code
 a = 'MMMMCMLXXXV'
 dict1 = {'I': 1, 'V':5, 'X':10, 'L': 50, 'C':100, 'D' : 500,'M':1000}
 start_time = time.perf_counter()
@@ -25,6 +26,7 @@ print(val)
 print(f"Total execution time is {(end_time - start_time)*1e6:.2f} microseconds.")
 # -----------------------------------------------------------------
 
+# method 2
 # def romanToInt(s: str) -> int:
 s = 'MMMMCMLXXXV'
 dict1 = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
@@ -43,6 +45,7 @@ print(f"Total execution time is {(end_time - start_time)*1e6:.2f} microseconds."
 #
 # ------------------------------------------------------------------------------------------
 
+# method 3 :
 s = 'MMMMCMLXXXV'
 dict1 = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
 start_time = time.perf_counter()
