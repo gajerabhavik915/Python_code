@@ -1,4 +1,4 @@
-a = 38
+a = 27458
 b = 0
 
 # method 1
@@ -11,11 +11,11 @@ while len(str(a)) != 1:
 print(a)
 
 # method 2
-while a > 10:
-    while a > 10:
-        b = b + (a % 10)
+while a >= 10:
+    while a :
+        b += (a % 10)
         a = a // 10
-    b = b + a
+    # b += a
     a = b
     b = 0
 
@@ -25,7 +25,7 @@ print(a)
 # method 3
 def addDigits(num: int):
     sum = 0
-    while num > 10:
+    while num >= 10:
         sum += (num%10)
         num = num//10
     sum = sum + num
