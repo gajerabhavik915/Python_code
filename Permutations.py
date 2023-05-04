@@ -15,3 +15,6 @@ def permute(nums):
         nums.append(n)
 
     return result
+
+nums = [1,2,3]
+print(permute(nums))
