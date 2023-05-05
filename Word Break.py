@@ -1,7 +1,6 @@
 
 a = 'leetcode'
-a = list(a)
+dict = ['lee','le', 'tco', 'de', 'cod']
 
 
-print(a.pop(0))
-print(a)
+
