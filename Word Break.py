@@ -1,8 +1,10 @@
 
-a = 'leecode'
+a = 'leetcode'
 # dict = ['tco','leet','leet', 'de', 'cod']
-dict = ['lee','code','leet']
+dict = ['lee','code','leeet']
 
+# a ="applepenapple"
+# dict = ["le","app","pen", "appl"]
 
 
 def wordBreak(a, Dict):
@@ -20,7 +22,7 @@ def wordBreak(a, Dict):
             a1 = a1[len(dict[i1]):]
             # print(a1)
 
-        for num in range(len(Dict)):
+        for num in range(len(a)//2):
             def rerun(a1, Dict):
 
                 for i in Dict:
@@ -30,7 +32,7 @@ def wordBreak(a, Dict):
 
                 return a1
 
-            # print(a1)
+            print(a1)
             if len(a1) == 0:
                 return False if a1 else True
             else:
