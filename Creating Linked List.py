@@ -107,6 +107,23 @@ class LinkedList:
             created_node.next = temp.next
 
 
+    def reverse(self):
+        if self.head.next is None:
+            return True
+        else:
+            temp = self.head
+            self.head = self.tail
+            self.tail = temp
+            before = None
+            after = temp.next
+            for a in range(self.len):
+                after = temp.next
+                temp.next = before
+                before = temp
+                temp = after
+
+
+
 
 
 
@@ -121,4 +138,6 @@ print(linklist.printing_list())
 print(linklist.printing_list())
 (linklist.prepend(1))
 (linklist.insert(5,6))
+print(linklist.printing_list())
+linklist.reverse()
 print(linklist.printing_list())
