@@ -131,13 +131,27 @@ class LinkedList:
 
 
 linklist = LinkedList(2)
-print(linklist.printing_list())
+# print(linklist.printing_list())
 (linklist.Append(3))
 (linklist.Append(4))
 (linklist.Append(5))
-print(linklist.printing_list())
+# print(linklist.printing_list())
 (linklist.prepend(1))
 (linklist.insert(5,6))
 print(linklist.printing_list())
-linklist.reverse()
-print(linklist.printing_list())
+# linklist.reverse()
+# print(linklist.printing_list())
+
+
+linklist1 = LinkedList(-1)
+# print(linklist1.printing_list())
+(linklist1.Append(0))
+(linklist1.Append(4))
+(linklist1.Append(5))
+# print(linklist1.printing_list())
+# (linklist1.prepend(1))
+(linklist1.insert(4,6))
+print(linklist1.printing_list())
+# linklist1.reverse()
+# print(linklist1.printing_list())
+
