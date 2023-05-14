@@ -27,3 +27,5 @@ class Solution:
                 temp = after
                 skip -= 1
 
+
+
