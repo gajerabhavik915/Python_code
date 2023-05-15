@@ -36,26 +36,26 @@ class Solution:
 
         # method 2
 
-        # dummy = ListNode(0)
-        # dummy.next = head
-        # head1 = dummy
-        # r = right-left+1
-        # count_l = 1
-        # left1 = head
-        # while left1 and count_l < left:
-        #     count_l = count_l + 1
-        #     left1 = left1.next
-        #     head1 = head1.next
-        # left2 = left1
-        # pre = None
-        # for i in range(r):
-        #     temp = left1.next
-        #     left1.next = pre
-        #     pre = left1
-        #     left1 = temp
+        dummy = ListNode(0)
+        dummy.next = head
+        head1 = dummy
+        r = right-left+1
+        count_l = 1
+        left1 = head
+        while left1 and count_l < left:
+            count_l = count_l + 1
+            left1 = left1.next
+            head1 = head1.next
+        left2 = left1
+        pre = None
+        for i in range(r):
+            temp = left1.next
+            left1.next = pre
+            pre = left1
+            left1 = temp
 
-        # head1.next = pre
-        # left2.next = left1
+        head1.next = pre
+        left2.next = left1
 
-        # return dummy.next
+        return dummy.next
 
