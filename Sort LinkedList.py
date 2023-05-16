@@ -8,6 +8,7 @@ class Solution:
         if not head or head.next is None:
             return head
 
+        # splitting list into two list
         left = head
         right = self.midelement(head)
         temp = right.next
@@ -18,6 +19,7 @@ class Solution:
         right = self.sortList(right)
         return self.merged(left, right)
 
+    # getting mid element
     def midelement(self, head):
         slow = head
         fast = head.next
@@ -26,6 +28,7 @@ class Solution:
             fast = fast.next.next
         return slow
 
+    # merging two list
     def merged(self, left, right):
         T1 = Dummy = ListNode()
         while left and right:
@@ -38,6 +41,7 @@ class Solution:
                 T1 = right
                 right = right.next
 
+        #whatever list remain will be added to T1.
         if left:
             T1.next = left
         else:
