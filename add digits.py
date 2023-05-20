@@ -33,3 +33,5 @@ def addDigits(num: int):
     return num if num < 10 else addDigits(num)
 
 print(addDigits(a))
+
+
