@@ -5,7 +5,7 @@ class TreeNode:
         self.left = left
         self.right = right
 class Solution:
-    def zigzagLevelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+    def zigzagLevelOrder(self, root: [TreeNode]) -> :
         result = []
         que = collections.deque()  # this is for creating queue
         que.append(root)
