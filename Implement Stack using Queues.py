@@ -1,3 +1,4 @@
+# Implimenting stack using Queue.
 
 class MyStack:
 
