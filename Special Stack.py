@@ -1,3 +1,4 @@
+# stack is already implemented
 # Your task is to complete all these function's
 # function should append an element on to the stack
 def push(arr, ele):
