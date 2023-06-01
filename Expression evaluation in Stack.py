@@ -9,7 +9,7 @@ class stack:
         self.stack_list.append(val)
 
     def pop(self):
-        self.stack_list.pop()
+        print(self.stack_list.pop())
 
 
     def pop1(self):
@@ -28,20 +28,22 @@ class stack:
             else:
                 top = self.pop1()
                 sec_top = self.pop1()
-                if i is '*':
+                if i == '*':
                     append = sec_top*top
                     self.append(append)
-                elif i is '+':
+                elif i == '+':
                     sum = sec_top+top
                     self.append(sum)
-                elif i is '/':
+                elif i == '/':
                     div = sec_top//top
                     self.append(div)
-                elif i is '-':
+                elif i == '-':
                     sub = sec_top-top
                     self.append(sub)
                 else:
                     continue
+
+        return self.pop()
 
 
 
@@ -59,15 +61,17 @@ class stack:
 
 
 stack = stack([])
-stack.print()
-stack.append(1)
-stack.print()
-stack.append(2)
-stack.append(3)
-stack.append(4)
-stack.append(5)
-stack.length()
-stack.print()
-stack.pop()
-stack.print()
+# stack.print()
+# stack.append(1)
+# stack.print()
+# stack.append(2)
+# stack.append(3)
+# stack.append(4)
+# stack.append(5)
+# stack.length()
+# stack.print()
+# stack.pop()
+# stack.print()
+list = '231*+9-'
+stack.take_input(list)
 
