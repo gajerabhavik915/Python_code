@@ -70,6 +70,9 @@ class Solution:
         else:
             return False
 
+
+# method 2
+
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
         if root.left is None or root.right is None:
             return False
