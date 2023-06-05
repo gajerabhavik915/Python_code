@@ -1,3 +1,9 @@
+'''
+Hint
+-created two list, one for left and second for right side
+-and fially match all element
+'''
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
