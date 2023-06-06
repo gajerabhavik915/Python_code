@@ -1,4 +1,10 @@
 # Definition for a binary tree node.
+'''
+try to solve through phase
+Created temp list to add all element of that phase
+once phase over, maxdepth(count) will be increased by one
+'''
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
