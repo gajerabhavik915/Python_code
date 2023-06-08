@@ -1,9 +1,15 @@
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+
+'''
+Hint - Using recursion, first we will go to the bottom node
+     - Check their balance on both side if it is balanced then go to above element.
+'''
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
 def helper(r):
     if r is None:
         return 0, True  # depth, is_balanced
@@ -16,6 +22,6 @@ def helper(r):
 
 
 class Solution:
-    def isBalanced(self, root: Optional[TreeNode]) -> bool:
+    def isBalanced(self, root: [TreeNode]) -> bool:
         _, is_balanced = helper(root)
         return is_balanced
