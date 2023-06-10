@@ -1,5 +1,5 @@
 class Solution:
-    def majorityElement(self, nums: List[int]) -> int:
+    def majorityElement(self, nums: [int]) -> int:
         len1 = len(nums) / 2
         dict1 = {}  # 3:1, 2:1
         count = 1
