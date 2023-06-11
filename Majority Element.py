@@ -1,6 +1,6 @@
 # method - 1
 class Solution:
-    def majorityElement(self, nums: List[int]) -> int:
+    def majorityElement(self, nums: [int]) -> int:
         count = 0
         res = 0
 
@@ -13,6 +13,7 @@ class Solution:
                 count += 1
 
         return res
+
 
 
 # method - 2
