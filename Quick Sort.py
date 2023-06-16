@@ -1,34 +1,33 @@
 
-# l = [4,6,9,1,2,13,5,7]
+# list1 = [4,6,9,1,2,13,5,7]
 
-l = [4,6,5,1,2]
-length = len(l)
-# # pivot = l[length - 1]
-# left = 0
-right = length - 2
+list1 = [4,6,5,1,2]
+length = len(list1)
+last = length - 1
 
-def Quick_sort(l, left, right):
-    pivot = right+1
+def Quick_sort(l, first, last):
+    pivot = list1[last]
+    left = first
+    right = last - 1
     while left <= right:
-        if l[left] <= l[pivot]:
+        if list1[left] < pivot:
             left += 1
-        elif l[right] >= l[pivot]:
+        elif list1[right] > pivot:
             right -= 1
         else:
-            l[left], l[right] = l[right], l[left]
+            list1[left], list1[right] = list1[right], list1[left]
     else:
-        l[left], l[pivot] = l[pivot], l[left]
-        return right
+        list1[left], list1[last] = pivot, list1[left]
+        print(right,list1)
+    return right
 
+def Quick1(list1, first, last):
+    if first < last:
+        rig = Quick_sort(list1, first, last)
+        Quick1(list1, first, rig)
+        Quick1(list1, rig+2, last)
 
-def Quick1(l,left, right):
-    if left < right:
-        p = Quick_sort(l,0, len(l) - 2)
-        Quick_sort(l,left,p-1)
-        Quick_sort(l, p+1, len(l) - 2)
-
-list = Quick1(l,0,right)
-print(list)
-
+Quick1(list1, 0, last)
+print(list1)
 
 
