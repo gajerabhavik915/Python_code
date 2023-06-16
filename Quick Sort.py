@@ -1,7 +1,8 @@
 
-# list1 = [4,6,9,1,2,13,5,7]
+list1 = [4,6,9,1,2,13,5,7]
 
-list1 = [4,6,5,1,2]
+
+# list1 = [4,6,5,1,2]
 length = len(list1)
 last = length - 1
 
@@ -20,6 +21,8 @@ def Quick_sort(l, first, last):
         list1[left], list1[last] = pivot, list1[left]
         print(right,list1)
     return right
+
+
 
 def Quick1(list1, first, last):
     if first < last:
