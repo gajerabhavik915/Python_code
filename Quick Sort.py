@@ -1,5 +1,6 @@
 
-list1 = [4,6,9,1,2,13,5,7]
+# list1 = [4,6,9,1,2,13,5,7]
+list1 = [4,5,2,1,6,9,81,23,12,5,6,44,88,55]
 
 
 # list1 = [4,6,5,1,2]
@@ -11,7 +12,7 @@ def Quick_sort(l, first, last):
     left = first
     right = last - 1
     while left <= right:
-        if list1[left] < pivot:
+        if list1[left] <= pivot:
             left += 1
         elif list1[right] > pivot:
             right -= 1
