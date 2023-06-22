@@ -1,6 +1,11 @@
 
-# nums = [1,1,1,2,2,3,1,1,2,2,5,6,3,3]
-nums=[1,2]
+
+# this algorithm is same as the leetcode for top K frequent element
+# this algorithm runs for printing list that can have k or more than k element in given list(nums)
+
+# time complexity of below algorithm will be o(n) time complexity.
+
+nums = [1,1,1,2,2,3,1,1,2,2,5,6,3,3]
 
 k = 1
 dict1 = {}
@@ -40,16 +45,6 @@ print(nums)
 
 
 
-# for j,i in enumerate(nums):
-#     if i not in dict1.keys():
-#         count = 1
-#         dict1[i] = count
-#         nums.pop(j)
-#     elif i in dict1.keys():
-#         count += 1
-#         dict1[i] = count
-#         if dict1[i] > k or dict1[i] < k:
-#             nums.pop(j)
 
 
 
